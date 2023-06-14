@@ -12,6 +12,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${LIB_DIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR})
 
 set(TARGET_VARIADIC_TEMPLATE variadic_template)
+set(TARGET_SFINAE sfinae)
 
 
 include_directories(${INCLUDE_DIR} "/export/devel/platform/boost/$ENV{BOOST_VERSION}/boost/include")
@@ -22,11 +23,12 @@ link_directories( ${LIB_DIR} )
 set(CMAKE_CXX_FLAGS "-fPIC -O3 -Wall -Wno-unused-function -std=c++20")
 
 set(SOURCES_VARIADIC_TEMPLATE ${SRC_DIR}/VariadicTemplate.cpp)
-
+set(SOURCES_SFINAE ${SRC_DIR}/SFINAE.cpp)
 
 #add_library(${TARGET_LIB} STATIC ${SOURCES_LIB})
 
 add_executable(${TARGET_VARIADIC_TEMPLATE} ${SOURCES_VARIADIC_TEMPLATE})
+add_executable(${TARGET_SFINAE} ${SOURCES_SFINAE})
 
 
 #target_link_libraries(${TARGET_SUB} ${APP_LINK_LIBS})
