@@ -8,5 +8,6 @@ Testing/*
 bin/variadic_template
 bin/sfinae
 bin/tag_dispatch
+bin/requires
 build.ninja
 cmake_install.cmake
