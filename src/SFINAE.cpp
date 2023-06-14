@@ -56,6 +56,6 @@ int main(int argc, char *argv[]) {
 
     //std::cout << "equal( fA, dB ) -> ";
     //std::cout << equal( fA, dB ) << std::endl; //ERROR - conflicting types float and double
-    
+
     return 0;
 }

@@ -7,5 +7,6 @@ CMakeFiles/*
 Testing/*
 bin/variadic_template
 bin/sfinae
+bin/tag_dispatch
 build.ninja
 cmake_install.cmake
